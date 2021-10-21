@@ -22,6 +22,7 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post('/sendTopForm', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
     const html = `
         <p>New  Email</p>
         <p>Name: ${req.body.name}</p>
@@ -45,6 +46,7 @@ app.post('/sendTopForm', (req, res) => {
 })
 
 app.post('/sendBottomForm', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
     const html = `
     <p>New  Email</p>
     <p>Name: ${req.body.name}</p>
