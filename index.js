@@ -24,7 +24,7 @@ let transporter = nodemailer.createTransport({
 app.post('/sendTopForm', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const html = `
-        <pNew enquiry for lodha Woods</p>
+        <p>New enquiry for lodha Woods</p>
         <p>Name: ${req.body.name}</p>
         <p>Email: ${req.body.email}</p>
         <p>Phone: ${req.body.phone}</p>
