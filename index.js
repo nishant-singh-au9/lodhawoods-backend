@@ -24,7 +24,7 @@ let transporter = nodemailer.createTransport({
 app.post('/sendTopForm', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const html = `
-        <p>New  Email</p>
+        <pNew enquiry for lodha Woods</p>
         <p>Name: ${req.body.name}</p>
         <p>Email: ${req.body.email}</p>
         <p>Phone: ${req.body.phone}</p>
@@ -32,7 +32,7 @@ app.post('/sendTopForm', (req, res) => {
     let mailOptions = {
         from: "developernishantsingh@gmail.com",
         to: emailTo,
-        subject: 'Test Email From Nishant',
+        subject: 'New enquiry for lodha Woods',
         html
     };
     transporter.sendMail(mailOptions, function(err, data) {
@@ -48,7 +48,7 @@ app.post('/sendTopForm', (req, res) => {
 app.post('/sendBottomForm', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     const html = `
-    <p>New  Email</p>
+    <p>New enquiry for lodha Woods</p>
     <p>Name: ${req.body.name}</p>
     <p>Email: ${req.body.email}</p>
     <p>Phone: ${req.body.phone}</p>
@@ -58,7 +58,7 @@ app.post('/sendBottomForm', (req, res) => {
     let mailOptions = {
         from: "developernishantsingh@gmail.com",
         to: emailTo,
-        subject: 'Test Email From Nishant',
+        subject: 'New enquiry for lodha Woods',
         html
     };
     transporter.sendMail(mailOptions, function(err, data) {
